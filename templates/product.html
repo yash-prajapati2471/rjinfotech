@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+            <h1 class="mb-2 mb-lg-0">Products</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li class="current">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+        <div class="container">
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-dell">DELL</li>
+                    <li data-filter=".filter-hp">HP</li>
+                    <li data-filter=".filter-lenovo">Lenovo</li>
+                </ul><!-- End Portfolio Filters -->
+
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <!-- DELL Products -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+                        <img src="{% static 'assets/img/masonry-portfolio/dell.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>DELL E7480 Touch | i5 6th Gen</h4>
+                            <p>8GB RAM | 256GB SSD | 14" - ₹19,000/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/dell.png' %}" title="DELL E7480 Touch" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+                        <img src="{% static 'assets/img/masonry-portfolio/dell-1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>DELL E7470 | i5 6th Gen</h4>
+                            <p>8GB RAM | 256GB SSD | 14" - ₹18,000/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/dell-1.png' %}" title="DELL E7470" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+                        <img src="{% static 'assets/img/masonry-portfolio/dell-2.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>DELL E7490 | i5 8th Gen</h4>
+                            <p>8GB RAM | 256GB SSD | 14" - ₹20,500/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/dell-2.png' %}" title="DELL E7490" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <!-- HP Products -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hp">
+                        <img src="{% static 'assets/img/masonry-portfolio/hp.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>HP ProBook 450 G3 | i3 6th Gen</h4>
+                            <p>8GB RAM | 256GB SSD | 15.6" - ₹18,000/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/hp.png' %}" title="HP ProBook 450 G3" data-gallery="portfolio-gallery-hp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hp">
+                        <img src="{% static 'assets/img/masonry-portfolio/hp-1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>HP EliteBook 840 G3 | i5 6th Gen</h4>
+                            <p>8GB RAM | 256GB SSD | 14" - ₹18,000/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/hp-1.png' %}" title="HP EliteBook 840 G3" data-gallery="portfolio-gallery-hp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <!-- Lenovo Products -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lenovo">
+                        <img src="{% static 'assets/img/masonry-portfolio/lenovo.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>ThinkPad T480s | i5 8th Gen</h4>
+                            <p>16GB RAM | 256GB SSD | 14" - ₹20,500/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/lenovo.png' %}" title="ThinkPad T480s" data-gallery="portfolio-gallery-lenovo" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lenovo">
+                        <img src="{% static 'assets/img/masonry-portfolio/lenovo-1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>ThinkPad X1 Carbon Gen 9 | i5 11th Gen</h4>
+                            <p>32GB RAM | 256GB SSD | 14" - ₹40,500/-</p>
+                            <a href="{% static 'assets/img/masonry-portfolio/lenovo-1.png' %}" title="ThinkPad X1 Carbon Gen 9" data-gallery="portfolio-gallery-lenovo" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                </div><!-- End Portfolio Container -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Portfolio Section -->
+
+</main>
+
+{% endblock %}

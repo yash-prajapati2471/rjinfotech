@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Services</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li class="services">Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-tools icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Free Setup & Support</a></h4>
+                <p class="description">We provide free setup and technical support for all our products to ensure a seamless experience.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-shield-check icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Warranty & Protection</a></h4>
+                <p class="description">Enjoy extended warranties and protection plans to keep your devices safe and secure.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-truck icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Fast & Free Shipping</a></h4>
+                <p class="description">Get your products delivered quickly with our fast and free shipping options.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-arrow-repeat icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Easy Returns</a></h4>
+                <p class="description">Not satisfied? No problem! We offer hassle-free returns within 30 days.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Features Section -->
+<section id="features" class="features section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Features</h2>
+    <p>Why Choose RJ Infotech?<br></p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">Premium Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">Latest Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">Affordable Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">Expert Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">Fast Delivery</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Premium Quality Laptops</h3>
+                <p class="fst-italic">We offer only the best laptops from top brands like Dell, HP, Lenovo, and more.</p>
+                <p>Our laptops are built to last, with high-quality materials and cutting-edge components. Whether you're a professional, gamer, or student, our devices are designed to meet your needs.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static 'assets/img/tabs/premium-quality.png' %}" alt="Premium Quality" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Latest Technology</h3>
+                <p class="fst-italic">Stay ahead with the latest advancements in laptop technology.</p>
+                <p>From powerful processors and high-resolution displays to advanced cooling systems and long-lasting batteries, our laptops are equipped with the latest innovations to enhance your productivity and gaming experience.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static 'assets/img/tabs/latest-tech.png' %}" alt="Latest Technology" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Affordable Prices</h3>
+                <p class="fst-italic">Get the best value for your money with our competitive pricing.</p>
+                <p>We believe in making high-quality laptops accessible to everyone. Enjoy exclusive discounts, financing options, and seasonal offers to make your purchase even more affordable.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static 'assets/img/tabs/affordable-prices.png' %}" alt="Affordable Prices" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Expert Support</h3>
+                <p class="fst-italic">Our team is here to help you every step of the way.</p>
+                <p>From choosing the right laptop to setting it up and troubleshooting, our experts are available 24/7 to provide guidance and support. We also offer extended warranties and protection plans for added peace of mind.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static 'assets/img/tabs/expert-support.png' %}" alt="Expert Support" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Fast Delivery</h3>
+                <p class="fst-italic">Get your laptop delivered to your doorstep in no time.</p>
+                <p>We offer fast and reliable shipping services to ensure you receive your order as quickly as possible. Enjoy free shipping on all orders above ₹10,000.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static 'assets/img/tabs/fa.png' %}" alt="Fast Delivery" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section -->
+  </main>
+  {% endblock %}

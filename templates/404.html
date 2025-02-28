@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    .center-text {
+        text-align: center;
+    }
+
+    .yash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;  /* Makes sure it takes up at least the full viewport height */
+    }
+
+    .button {
+        background-color: #d9232d;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    .button:hover {
+        background-color: #d9232d;
+        color: #ffffff;
+    }
+</style>
+
+<div class="yash">
+    <h1 class="center-text">404 - Page Not Found</h1>
+    <p class="center-text">Sorry, the page you are looking for doesn't exist.</p>
+    <a href="{% url "index" %}" class="button">Go Back</a>
+</div>
+
+{% endblock %}

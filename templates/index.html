@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Welcome to RJ Infotech<br></h2>
+            <p>Your one-stop destination for the latest laptops and accessories. Explore our wide range of high-performance laptops tailored for work, gaming, and creativity.</p>
+            <a href="{% url "about" %}" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Upgrade Your Tech</h2>
+            <p>Discover the best deals on top brands like Dell, HP, Lenovo, and more. Whether you're a student, professional, or gamer, we have the perfect laptop for you.</p>
+            <a href="{% url "about" %}" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Exclusive Offers</h2>
+            <p>Enjoy exclusive discounts and financing options on our premium laptop collection. Don't miss out on limited-time deals!</p>
+            <a href="{% url "about" %}" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>About RJ Infotech<br></p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+              <p>
+                At RJ Infotech, we are passionate about providing cutting-edge technology solutions. Our mission is to empower individuals and businesses with the best laptops and accessories to enhance productivity and creativity.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Wide range of laptops from top brands.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Expert advice and customer support.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Affordable prices and flexible financing options.</span></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <p>We believe in delivering quality products and exceptional service. Whether you're looking for a laptop for work, gaming, or everyday use, RJ Infotech has you covered. Visit us today and experience the difference!</p>
+              <a href="{% url "about" %}" class="read-more"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/hp-logo.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/dell-logo.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/mackbook-logo.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/asus-logo.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/lenovo-logo.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/acer.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item d-flex position-relative h-100">
+                <i class="bi bi-tools icon flex-shrink-0"></i>
+                <div>
+                  <h4 class="title"><a href="#" class="stretched-link">Free Setup & Support</a></h4>
+                  <p class="description">We provide free setup and technical support for all our products to ensure a seamless experience.</p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item d-flex position-relative h-100">
+                <i class="bi bi-shield-check icon flex-shrink-0"></i>
+                <div>
+                  <h4 class="title"><a href="#" class="stretched-link">Warranty & Protection</a></h4>
+                  <p class="description">Enjoy extended warranties and protection plans to keep your devices safe and secure.</p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item d-flex position-relative h-100">
+                <i class="bi bi-truck icon flex-shrink-0"></i>
+                <div>
+                  <h4 class="title"><a href="#" class="stretched-link">Fast & Free Shipping</a></h4>
+                  <p class="description">Get your products delivered quickly with our fast and free shipping options.</p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item d-flex position-relative h-100">
+                <i class="bi bi-arrow-repeat icon flex-shrink-0"></i>
+                <div>
+                  <h4 class="title"><a href="#" class="stretched-link">Easy Returns</a></h4>
+                  <p class="description">Not satisfied? No problem! We offer hassle-free returns within 30 days.</p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Products</h2>
+        <p>Explore Our Top Picks</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-dell">DELL</li>
+            <li data-filter=".filter-hp">HP</li>
+            <li data-filter=".filter-lenovo">Lenovo</li>
+        </ul><!-- End Portfolio Filters -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- DELL Products -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+              <img src="{% static 'assets/img/masonry-portfolio/dell.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>DELL E7480 Touch | i5 6th Gen</h4>
+                  <p>8GB RAM | 256GB SSD | 14" - ₹19,000/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/dell.png' %}" title="DELL E7480 Touch" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+              <img src="{% static 'assets/img/masonry-portfolio/dell-1.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>DELL E7470 | i5 6th Gen</h4>
+                  <p>8GB RAM | 256GB SSD | 14" - ₹18,000/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/dell-1.png' %}" title="DELL E7470" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dell">
+              <img src="{% static 'assets/img/masonry-portfolio/dell-2.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>DELL E7490 | i5 8th Gen</h4>
+                  <p>8GB RAM | 256GB SSD | 14" - ₹20,500/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/dell-2.png' %}" title="DELL E7490" data-gallery="portfolio-gallery-dell" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <!-- HP Products -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hp">
+              <img src="{% static 'assets/img/masonry-portfolio/hp.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>HP ProBook 450 G3 | i3 6th Gen</h4>
+                  <p>8GB RAM | 256GB SSD | 15.6" - ₹18,000/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/hp.png' %}" title="HP ProBook 450 G3" data-gallery="portfolio-gallery-hp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hp">
+              <img src="{% static 'assets/img/masonry-portfolio/hp-1.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>HP EliteBook 840 G3 | i5 6th Gen</h4>
+                  <p>8GB RAM | 256GB SSD | 14" - ₹18,000/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/hp-1.png' %}" title="HP EliteBook 840 G3" data-gallery="portfolio-gallery-hp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <!-- Lenovo Products -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lenovo">
+              <img src="{% static 'assets/img/masonry-portfolio/lenovo.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>ThinkPad T480s | i5 8th Gen</h4>
+                  <p>16GB RAM | 256GB SSD | 14" - ₹20,500/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/lenovo.png' %}" title="ThinkPad T480s" data-gallery="portfolio-gallery-lenovo" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lenovo">
+              <img src="{% static 'assets/img/masonry-portfolio/lenovo-1.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>ThinkPad X1 Carbon Gen 9 | i5 11th Gen</h4>
+                  <p>32GB RAM | 256GB SSD | 14" - ₹40,500/-</p>
+                  <a href="{% static 'assets/img/masonry-portfolio/lenovo-1.png' %}" title="ThinkPad X1 Carbon Gen 9" data-gallery="portfolio-gallery-lenovo" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+          </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
+{% endblock %}
