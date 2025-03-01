@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'rj_infotech.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rjinfotech',
-        'USER': 'root',
-        'PASSWORD': 'yash1234',
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'NAME': os.getenv('DB_NAME', 'rjinfotech'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'yash1234'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
 
@@ -127,10 +127,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = ['static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-STATIC_DIRS = [os.path.join(BASE_DIR,'static')]
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR/'media'
