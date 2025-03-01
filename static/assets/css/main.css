@@ -19,10 +19,23 @@
 }
 
 .logo-img {
-  max-width: 100%;  /* Ensures the image takes up the available space */
-  height: auto;     /* Keeps the aspect ratio of the image */
-  width: auto;      /* Prevents stretching the image */
+  max-width: 100px; /* Set a fixed size for small screens */
+  height: auto;
 }
+
+/* Adjust for tablets and larger screens */
+@media (min-width: 768px) {
+  .logo-img {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-img {
+    max-width: 150px;
+  }
+}
+
 
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
