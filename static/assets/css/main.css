@@ -14,7 +14,7 @@
 
 /* Add this CSS to make the image responsive */
 .logo-img {
-  max-width: 150px; /* Increase size for mobile */
+  max-width: 130px; /* Increase size for mobile */
   height: auto;
 }
 
