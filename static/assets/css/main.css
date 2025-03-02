@@ -14,20 +14,21 @@
 
 /* Add this CSS to make the image responsive */
 .logo-img {
-  max-width: 150px; /* Default size */
+  max-width: 150px; /* Increase size for mobile */
   height: auto;
 }
 
-/* Adjust for tablets and larger screens */
+/* Adjust for tablets */
 @media (min-width: 768px) {
   .logo-img {
-    max-width: 150px;
+    max-width: 180px;
   }
 }
 
+/* Adjust for larger screens */
 @media (min-width: 1024px) {
   .logo-img {
-    max-width: 180px;
+    max-width: 200px;
   }
 }
 
