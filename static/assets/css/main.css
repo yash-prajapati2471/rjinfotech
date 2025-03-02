@@ -13,28 +13,24 @@
 /* Fonts */
 
 /* Add this CSS to make the image responsive */
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo-img {
-  max-width: 100px; /* Set a fixed size for small screens */
+  max-width: 150px; /* Default size */
   height: auto;
 }
 
 /* Adjust for tablets and larger screens */
 @media (min-width: 768px) {
   .logo-img {
-    max-width: 120px;
+    max-width: 150px;
   }
 }
 
 @media (min-width: 1024px) {
   .logo-img {
-    max-width: 150px;
+    max-width: 180px;
   }
 }
+
 
 
 :root {
